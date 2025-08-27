@@ -4,9 +4,7 @@
 
 > You live in it.
 
-Callback Hell is a Ruby gem for use with Ruby on Rails applications.
-
-It analyzes your Rails application models and provides actionable insights on callbacks and validations. Use it to identify models that might benefit from refactoring, spot callback pollution from gems and associations, and keep your models clean and maintainable.
+Callback Hell is a Ruby gem that analyzes your Ruby on Rails application models and provides actionable insights on callbacks and validations. Use it to identify models that might benefit from refactoring, spot callback pollution from gems and associations, and keep your models clean and maintainable.
 
 <a href="https://evilmartians.com/?utm_source=callback_hell">
 <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg" alt="Sponsored by Evil Martians" width="236" height="54">
@@ -161,9 +159,9 @@ jobs:
 
 ## Credits and acknowledgements
 
-Callback Hell is a spiritual successor of the [arca](https://github.com/jonmagic/arca) gem by [Jonathan Hoyt](https://github.com/jonmagic).
+Callback Hell is supposed to be a spiritual successor of the [arca](https://github.com/jonmagic/arca) gem by [Jonathan Hoyt](https://github.com/jonmagic).
 
-The entire idea and a detailed specification for the gem was done by [Vladimir Dementyev](https://github.com/palkan) who initially offered it as a test task for [Evil Martians](https://evilmartians.com/?utm_source=callback_hell) Ruby developer take-home task.
+The entire idea and a detailed specification for the gem was done by [Vladimir Dementyev](https://github.com/palkan) who initially offered it as a Ruby developer candidate take-home task for [Evil Martians](https://evilmartians.com/?utm_source=callback_hell).
 
 ## Contributing
 
