@@ -76,7 +76,7 @@ All rake tasks support the following options:
 # Table format (default)
 bin/rails callback_hell:callbacks format=table
 
-# Line format: detailed per-callback breakdown, useful for debugging
+# Line format: detailed per-callback breakdown
 bin/rails callback_hell:callbacks format=line
 
 # GitHub Actions format for CI/CD
@@ -100,19 +100,19 @@ bin/rails ch model=Admin::User
 
 ```bash
 # Sort by callback count (default)
-bin/rails ch sort=size:desc
+bin/rails ch sort=total
 
 # Sort alphabetically
-bin/rails ch sort=name:asc
+bin/rails ch sort=name
 ```
 
 #### Analysis modes
 
 ```bash
-# Default mode - your callbacks only
+# Default mode: your callbacks only
 bin/rails ch mode=default
 
-# Full mode - includes Rails internals and associations
+# Full mode: includes Rails internals and associations
 bin/rails ch mode=full
 ```
 
