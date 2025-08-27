@@ -74,13 +74,13 @@ All rake tasks support the following options:
 
 ```bash
 # Table format (default)
-bin/rails callback_hell:callbacks format=table
+bin/rails ch:callbacks format=table
 
 # Line format: detailed per-callback breakdown
-bin/rails callback_hell:callbacks format=line
+bin/rails ch:callbacks format=line
 
 # GitHub Actions format for CI/CD
-bin/rails callback_hell:callbacks format=github
+bin/rails ch:callbacks format=github
 ```
 
 #### Model filtering
