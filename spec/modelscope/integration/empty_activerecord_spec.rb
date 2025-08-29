@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 RSpec.describe CallbackHell, "with an empty ActiveRecord" do
+  def normalization_supported?
+    ActiveRecord::Base.respond_to?(:normalizes)
+  end
+
   let(:options) { {} }
   subject(:ar) { CallbackHell::Collector.new(ApplicationRecord, **options).collect }
 
@@ -18,10 +22,12 @@ RSpec.describe CallbackHell, "with an empty ActiveRecord" do
         method_name: :cant_modify_encrypted_attributes_when_frozen,
         origin: :rails, inherited: false
       )
-      expect(ar).to have_callback(
-        method_name: :normalize_changed_in_place_attributes,
-        origin: :rails, inherited: false
-      )
+      if normalization_supported?
+        expect(ar).to have_callback(
+          method_name: :normalize_changed_in_place_attributes,
+          origin: :rails, inherited: false
+        )
+      end
     end
   end
 end
