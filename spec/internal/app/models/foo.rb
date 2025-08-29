@@ -14,7 +14,7 @@ class Foo < ApplicationRecord
   after_create :noop
   around_create :noop, if: :createable?
 
-  normalizes :name, with: -> { _1.strip }
+  normalizes :name, with: -> { _1.strip } if respond_to?(:normalizes)
 
   def noop = true
 
