@@ -62,7 +62,7 @@ We support Ruby 3.0+ and Rails 7.0+.
 
 ## Usage
 
-**Note:** you can use both `rake` or `bin/rails` as you wish.
+**Note:** you can use either `rake` or `bin/rails` as you wish.
 
 ### Command line options
 
@@ -161,7 +161,9 @@ jobs:
 
 Callback Hell is supposed to be a spiritual successor of the [arca](https://github.com/jonmagic/arca) gem by [Jonathan Hoyt](https://github.com/jonmagic).
 
-The entire idea and a detailed specification for the gem was done by [Vladimir Dementyev](https://github.com/palkan) who initially offered it as a Ruby developer candidate take-home task for [Evil Martians](https://evilmartians.com/?utm_source=callback_hell).
+The entire idea and a detailed specification for the gem were done by [Vladimir Dementyev](https://github.com/palkan) who initially offered it as a Ruby developer candidate take-home task for [Evil Martians](https://evilmartians.com/?utm_source=callback_hell).
+
+Shout-out to [Adam Doppelt](https://github.com/gurgeous) for [table_tennis](https://github.com/gurgeous/table_tennis) that we use for formatting tables.
 
 ## Contributing
 
