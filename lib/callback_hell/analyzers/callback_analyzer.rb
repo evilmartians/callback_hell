@@ -10,9 +10,13 @@ module CallbackHell
       ].freeze
 
       RAILS_ATTRIBUTE_OWNERS = [
-        defined?(ActiveRecord::Normalization) ? ActiveRecord::Normalization : ActiveModel::Attributes::Normalization,
-        ActiveRecord::Encryption::EncryptableRecord
-      ].freeze
+        defined?(ActiveRecord::Normalization) &&
+          ActiveRecord::Normalization,
+        defined?(ActiveModel::Attributes::Normalization) &&
+          ActiveModel::Attributes::Normalization,
+        defined?(ActiveRecord::Encryption::EncryptableRecord) &&
+          ActiveRecord::Encryption::EncryptableRecord
+      ].compact.freeze
 
       def initialize(callback, model, defining_class)
         @callback = callback
