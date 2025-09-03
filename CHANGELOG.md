@@ -1,5 +1,9 @@
 # Change log
 
+## Unreleased
+
+- Proper support for Rails 7.0 and its lack of `normalizes` (https://github.com/evilmartians/callback_hell/issues/1) ([@yaroslav][])
+
 ## 0.2.0
 
 - Initial public release. ([@yaroslav][])
